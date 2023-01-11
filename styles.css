@@ -24,9 +24,9 @@ nav {
     background-color: rgba(0, 0, 0, 0.507);
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
-    top: 0;
+    /* top: 0; */
 }
 
 
@@ -204,7 +204,7 @@ nav {
 
 
 .talk-to-me:hover {
-    background-color: rgb(224, 212, 42);
+    background-color: #b8d129;
     border: none;
     color: black;
 }
@@ -243,13 +243,15 @@ nav {
 }
 
 .profile-details {
-    margin-top: 110px;
+    margin-top: 100px;
     margin-left: 80px;
     font-size: 25px;
     font-family: cursive;
-
 }
 
+.pd1 {
+    line-height: 2;
+}
 .contact {
     display: flex;
     justify-content: space-evenly;
@@ -298,24 +300,11 @@ nav {
     display: flex;
 }
 
-.work-title {
-    display: inline-block;
-    position: absolute;
-    margin-bottom: 50px;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .fa-sharp {
-    font-size: 60px;
-    margin-left: 250px;
+    font-size: 50px;
+    margin-left: 40px;
 }
 
-/* .display {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
-} */
 
 .row {
     display: flex;
@@ -336,65 +325,73 @@ nav {
 
 
 
-#work-button {
-    display: flex;
-    justify-content: center;
-}
+
 .work-button {
-    width: 135px;
-    height: 45px;
-    border-color: yellowgreen;
-    color: chartreuse;
-}
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#0a0a0a;
+    border-color:#74b807;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #a4e271;
+    text-shadow:inset 0px 1px 0px #528009;
+    background:#89c403;
+    position: relative;
+    left: 47%;
+  }
+  
+  .work-button:hover {
+    background: #77a809
+  }
 
-.work-button:hover {
-    background-color: chartreuse;
-    color: black;
-}
-
-.arrow {
-    border: solid chartreuse;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
 
 .about {
     width: 100%;
     height: 630px;
-    margin: 100px 0 250px 0;
-    background-color: rgb(116, 245, 133);
+    margin: 100px 0 150px 0;
+    /* background-color: rgb(116, 245, 133); */
+    background-color: #F3ECB0;
 }
 
 .about-frame {
     display: flex;
     justify-content: space-between;
 }
+
 .about-me {
     width: 65%;
-    height: 300px;
-    /* background-color: transparent greenyellow; */
-    /* background-image: linear-gradient(to right bottom, rgb(235, 247, 172), rgb(125, 155, 123)); */
-    border-radius: 0 50px 0px 0;
+    /* height: 300px; */
     margin-left: 70px;
     margin-top: 50px;
 }
 
+.personal-pix {
+    width: 180px;
+    height: 270px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+
 .about-head {
-    margin: 0px 0 35px 75px;
+    margin: 0px 0 50px 100px;
     font-size: 50px;
-    font-family: monospace;
 }
 
 .mantra {
-    width: 23%;
-    height: 280px;
+    width: 20%;
+    height: 250px;
     background-color: rgba(0, 0, 0, 0.507);
     border-radius: 30px 0 30px 0;
-    margin-right: 40px;
-    margin-top: 50px;
+    margin-right: 70px;
+    margin-top: 175px;
     color: chartreuse;
     display: flex;
     flex-direction: column;
@@ -407,7 +404,7 @@ nav {
 }
 
 .mantra-head {
-    margin: 40px 0 25px 50px;
+    margin: 30px 0 25px 50px;
     font-size: 40px;
 }
 
@@ -419,25 +416,20 @@ nav {
 .about-skills {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin: 75px 50px 0;
 }
 
 .skill-img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     box-shadow: 3px 3px 5px rgb(121, 128, 113);
     border-radius: 0 0 20px 0;
     margin-bottom: 10px;
 }
 
-.skrt {
-    margin-left: 1px;
-    opacity: 0;
-}
 
-.skrt:hover {
-    opacity: 1;
-}
+
+/************ CONTACT PAGE *************/
 
 .contact-me {
     width: 93%;
@@ -490,31 +482,182 @@ nav {
 
 footer {
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: black;
-    display: flex;
-    flex-direction: column;
 }
 
-.pix {
-    margin: 70px 0 10px 75px;
-}
 
 .f-logo {
     width: 160px;
     height: 60px;
-    /* margin: 2px 0 0 0px; */
     padding: 15px 0 0 15px;
-    border-radius:15px;
+    border-radius: 15px;
+    margin: 30px 0 10px 75px;
+}
+
+.abt-me {
+    margin: 10px 130px;
+    display: flex;
+}
+
+
+.footer-desc {
+    width: 70%;
+    margin-top: 0;
+}
+
+.footer-btn {
+    position: absolute;
+    right: 100px;
+}
+
+.cv-btn {
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#0a0a0a;
+    border-color:#74b807;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #a4e271;
+    text-shadow:inset 0px 1px 0px #528009;
+    background:#89c403;
+    margin-right: 30px;
+}
+
+.cv-btn:hover {
+    background: #77a809;
+}
+
+.convo-btn {
+    width: 135px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 25px;
+    border-color:  #77a809;
+    margin: 18px 10px 0px 0px;
+    color: #77a809;
+} 
+
+
+.convo-btn:hover {
+background-color: #77a809;
+border: none;
+color: #0a0a0a;
 }
 
 .handle {
-    margin: 10px 0 10px 100px;
+    margin: 0 0 0 100px;
 }
 
 #sm {
     color: yellow;
     font-size: 25px;
-    margin-right: 15px;
+    position: relative;
+    left: 35%;
+    margin-right: 70px;
+    margin-top: 10px;
 }
 
+#sm:hover {
+    color: #77a809;
+}
+
+
+/********* CURRICULUM VITAE *********/
+
+.cv-body {
+    background-color: #CCD6A6;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-layout {
+    width: 794px;
+    height: 1123px;
+    margin: 75px 0 75px 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 5px rgb(121, 128, 113);
+    display: block;
+}
+
+.bio-data {
+    display: block;
+    margin: 10px 10px 15px 10px;
+    text-align: center;
+    background-color: #181D31;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-map-location {
+    font-size: 60px;
+}
+
+.cv-hr {
+    border: none;
+    background-color: #181D31;
+    color: #181D31;
+    height: 2px;
+    margin: 0 48px 8px 48px;
+}
+
+.career-goal {
+    margin: 0 96px 20px 96px; 
+}
+
+.cg {
+    margin-bottom: 8px;
+}
+
+.cgp {
+    margin-left: 15px;
+}
+
+.personal-info {
+    margin-left: 96px;
+}
+
+.qual {
+    margin: 0 96px 15px 96px;
+}
+
+.sch {
+    background-color: #181D31;
+    color: #FFFFFF;
+}
+
+.work-exp {
+    margin: 0 96px 15px 96px;
+}
+
+.pro-skill {
+    margin: 0 96px 15px 96px;
+}
+
+.hobby {
+    margin: 0 96px 20px 96px;
+}
+
+.footer-desc {
+    color: yellowgreen;
+}
+
+.end-cv {
+    width: 100%;
+    height: 40px;
+    background-color: #181D31;
+    color: #FFFFFF;
+    text-align: right;
+}
